@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>44</x>
+      <y>517</y>
+      <w>231</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+id: int
+review_list: Review[] = []
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>814</x>
+      <y>495</y>
+      <w>297</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>Worker
+--
+id: int
+response_speed: string = ''
+birthday:?Carbon = null
+description: string = ''
+animal_relationship: string = ''
+meeting_price: float = 0
+has_card_payment: bool = false
+is_mobile_number_confirmed: bool = false
+is_passport_confirmed: bool = false
+min_child_age: int = 0
+max_child_age: int = 0
+price_list: Price[] = []
+schedule_list: Schedule[] = []
+review_list: Review[] = []
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>0</y>
+      <w>231</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes>User
+--
+id: int
+first_name: string = ''
+last_name: string = ''
+email: string = ''
+password: string = ''
+mobile_number: string = ''
+notify_sms: bool = false
+notify_email: bool = false
+notify_cabinet: bool = false
+client: ?Client = null
+worker: ?Worker = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>308</y>
+      <w>286</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>539</x>
+      <y>308</y>
+      <w>418</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;360.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1122</x>
+      <y>935</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Price
+--
+id: int
+child_count: int = 1
+value: fload = 0
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>715</y>
+      <w>429</w>
+      <h>473</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;370.0;410.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1155</x>
+      <y>627</y>
+      <w>231</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Schedule
+--
+id: int
+day: sting = ''
+from: ?Carbon = null
+to: ?Carbon = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>550</y>
+      <w>187</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;20.0;60.0;10.0;150.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>1166</y>
+      <w>231</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Review
+--
+id: int
+description: string = ''
+created_at: string = ''
+client: Client
+worker: Worker
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>682</x>
+      <y>825</y>
+      <w>286</w>
+      <h>363</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1034</x>
+      <y>825</y>
+      <w>176</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>528</y>
+      <w>209</w>
+      <h>418</h>
+    </coordinates>
+    <panel_attributes>Contract
+--
+id: int
+client: Client
+worker: ?Worker = null
+child_count: int = 1
+price: float = 0
+description: string = ''
+start_at: Carbon = null
+end_at: Carbon = null
+address: string = null
+coords_x: int
+corrds_y: int
+payment_method: string
+
+
+accepted_at: Carbon = null
+declined_at: Carbon = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: ?Carbon = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>627</y>
+      <w>198</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>638</x>
+      <y>627</y>
+      <w>198</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>132</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+id: int
+description: string = ''
+from: User
+to: User
+created_at: Carbon
+updated_at: Carbon
+deleted_at: ?Carbon = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>220</y>
+      <w>286</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>253</y>
+      <w>286</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;20.0</additional_attributes>
+  </element>
+</diagram>
