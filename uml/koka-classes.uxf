@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>517</x>
+      <y>396</y>
+      <w>231</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+id: int
+review_list: Review[] = []
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1133</x>
+      <y>407</y>
+      <w>297</w>
+      <h>473</h>
+    </coordinates>
+    <panel_attributes>Worker
+--
+id: int
+has_kidsout_training_school: bool = false
+response_speed: string = ''
+birthday:?Carbon = null
+description: string = ''
+animal_relationship: string = ''
+meeting_price: float = 0
+has_card_payment: bool = false
+is_mobile_number_confirmed: bool = false
+is_passport_confirmed: bool = false
+min_child_age: int = 0
+max_child_age: int = 0
+price_list: Price[] = []
+schedule_list: Schedule[] = []
+review_list: Review[] = []
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>781</x>
+      <y>0</y>
+      <w>231</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes>User
+--
+id: int
+first_name: string = ''
+last_name: string = ''
+email: string = ''
+password: string = ''
+mobile_number: string = ''
+notify_sms: bool = false
+notify_email: bool = false
+notify_cabinet: bool = false
+client: ?Client = null
+worker: ?Worker = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>649</x>
+      <y>308</y>
+      <w>198</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>308</y>
+      <w>352</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1562</x>
+      <y>605</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Price
+--
+id: int
+child_count: int = 1
+value: fload = 0
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>627</x>
+      <y>594</y>
+      <w>220</w>
+      <h>407</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;150.0;60.0;150.0;350.0;180.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1562</x>
+      <y>396</y>
+      <w>231</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Schedule
+--
+id: int
+day: sting = ''
+from: ?Carbon = null
+to: ?Carbon = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1419</x>
+      <y>473</y>
+      <w>165</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>880</y>
+      <w>231</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Review
+--
+id: int
+description: string = ''
+created_at: string = ''
+client: Client
+worker: Worker
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>858</y>
+      <w>132</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;50.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1419</x>
+      <y>660</y>
+      <w>165</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>396</y>
+      <w>209</w>
+      <h>418</h>
+    </coordinates>
+    <panel_attributes>Contract
+--
+id: int
+client: Client
+worker: ?Worker = null
+child_count: int = 1
+price: float = 0
+description: string = ''
+start_at: Carbon = null
+end_at: Carbon = null
+address: string = null
+coords_x: int
+corrds_y: int
+payment_method: string
+
+
+accepted_at: Carbon = null
+declined_at: Carbon = null
+created_at: Carbon
+updated_at: Carbon
+deleted_at: ?Carbon = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>737</x>
+      <y>495</y>
+      <w>132</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1045</x>
+      <y>495</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1188</x>
+      <y>11</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+id: int
+description: string = ''
+from: User
+to: User
+created_at: Carbon
+updated_at: Carbon
+deleted_at: ?Carbon = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>44</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>88</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>1045</y>
+      <w>231</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>Additionally
+--
+id: int
+toys: bool = false
+creativity_materials: bool = false
+sport_materials: bool = false
+gaming_devices: bool = false
+painting: bool = false
+sinceshow: bool = false
+decorative_show: bool = false
+created_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>539</y>
+      <w>231</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>671</y>
+      <w>231</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>Request
+--
+id: int
+name: string = "
+phone: string = "
+email: string = "
+event_at: Carbon = null
+event_from: Carbon = null
+event_to: Carbon = null
+event_type: Carbon = null
+event_comment: Carbon = null
+created_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>242</x>
+      <y>968</y>
+      <w>33</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>484</x>
+      <y>726</y>
+      <w>286</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Babysitter search engine
+--
+id: int
+date_at: Carbon = null
+began_at: Carbon = null
+end_at: Carbon = null
+city: city[] = []
+number_of_children: bool = false
+can_sit_with_infant: bool = false
+can_sit_with_special_child: bool = false
+finished_kidsout_shool: bool = false</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>539</x>
+      <y>594</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1177</x>
+      <y>1023</y>
+      <w>264</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>Kidsout shool
+--
+id: int
+first_name: string = ''
+last_name: string = ''
+age: string = age[] = []
+mobile_number: string = ''
+email: string = ''
+city: city[] = []
+place_of_work_or_stady:  string = ''
+hource_in_week: hource[] = []
+month_salary: salary[] = []
+question_about_bebysiting: string = ''
+question_about_us: string = ''
+created_at: Carbon
+updated_at: Carbon
+deleted_at: Carbon</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1221</x>
+      <y>869</y>
+      <w>33</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
