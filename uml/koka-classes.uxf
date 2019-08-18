@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>517</x>
-      <y>396</y>
+      <x>594</x>
+      <y>407</y>
       <w>231</w>
       <h>209</h>
     </coordinates>
@@ -21,8 +21,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1133</x>
-      <y>407</y>
+      <x>1210</x>
+      <y>418</y>
       <w>297</w>
       <h>473</h>
     </coordinates>
@@ -43,6 +43,7 @@ max_child_age: int = 0
 price_list: Price[] = []
 schedule_list: Schedule[] = []
 review_list: Review[] = []
+city: city[] = []
 created_at: Carbon
 updated_at: Carbon
 deleted_at: Carbon</panel_attributes>
@@ -51,8 +52,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>781</x>
-      <y>0</y>
+      <x>858</x>
+      <y>11</y>
       <w>231</w>
       <h>319</h>
     </coordinates>
@@ -77,8 +78,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>649</x>
-      <y>308</y>
+      <x>726</x>
+      <y>319</y>
       <w>198</w>
       <h>110</h>
     </coordinates>
@@ -88,8 +89,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>924</x>
-      <y>308</y>
+      <x>1001</x>
+      <y>319</y>
       <w>352</w>
       <h>121</h>
     </coordinates>
@@ -99,8 +100,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1562</x>
-      <y>605</y>
+      <x>1639</x>
+      <y>616</y>
       <w>231</w>
       <h>176</h>
     </coordinates>
@@ -117,19 +118,19 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>627</x>
-      <y>594</y>
-      <w>220</w>
+      <x>704</x>
+      <y>605</y>
+      <w>253</w>
       <h>407</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0;150.0;60.0;150.0;350.0;180.0;350.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;150.0;60.0;150.0;350.0;210.0;350.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1562</x>
-      <y>396</y>
+      <x>1639</x>
+      <y>407</y>
       <w>231</w>
       <h>165</h>
     </coordinates>
@@ -147,8 +148,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1419</x>
-      <y>473</y>
+      <x>1496</x>
+      <y>484</y>
       <w>165</w>
       <h>33</h>
     </coordinates>
@@ -158,9 +159,9 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>825</x>
-      <y>880</y>
-      <w>231</w>
+      <x>935</x>
+      <y>891</y>
+      <w>198</w>
       <h>198</h>
     </coordinates>
     <panel_attributes>Review
@@ -178,19 +179,19 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1045</x>
-      <y>858</y>
+      <x>1122</x>
+      <y>880</y>
       <w>132</w>
-      <h>77</h>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>100.0;10.0;100.0;50.0;10.0;50.0</additional_attributes>
+    <additional_attributes>100.0;10.0;100.0;40.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1419</x>
-      <y>660</y>
+      <x>1496</x>
+      <y>671</y>
       <w>165</w>
       <h>33</h>
     </coordinates>
@@ -200,8 +201,8 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>847</x>
-      <y>396</y>
+      <x>924</x>
+      <y>407</y>
       <w>209</w>
       <h>418</h>
     </coordinates>
@@ -231,8 +232,8 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>737</x>
-      <y>495</y>
+      <x>814</x>
+      <y>506</y>
       <w>132</w>
       <h>33</h>
     </coordinates>
@@ -242,8 +243,8 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1045</x>
-      <y>495</y>
+      <x>1122</x>
+      <y>506</y>
       <w>110</w>
       <h>33</h>
     </coordinates>
@@ -253,8 +254,8 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1188</x>
-      <y>11</y>
+      <x>1265</x>
+      <y>0</y>
       <w>231</w>
       <h>176</h>
     </coordinates>
@@ -272,8 +273,8 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1001</x>
-      <y>44</y>
+      <x>1078</x>
+      <y>33</y>
       <w>209</w>
       <h>33</h>
     </coordinates>
@@ -283,8 +284,8 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1001</x>
-      <y>88</y>
+      <x>1078</x>
+      <y>77</y>
       <w>209</w>
       <h>33</h>
     </coordinates>
@@ -294,10 +295,10 @@ deleted_at: ?Carbon = null</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>1045</y>
+      <x>0</x>
+      <y>858</y>
       <w>231</w>
-      <h>308</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>Additionally
 --
@@ -316,23 +317,23 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>308</x>
-      <y>539</y>
+      <x>385</x>
+      <y>550</y>
       <w>231</w>
-      <h>154</h>
+      <h>99</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>190.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>671</y>
+      <x>0</x>
+      <y>572</y>
       <w>231</w>
-      <h>308</h>
+      <h>231</h>
     </coordinates>
-    <panel_attributes>Request
+    <panel_attributes>Playground request
 --
 id: int
 name: string = "
@@ -350,23 +351,23 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>242</x>
-      <y>968</y>
+      <x>99</x>
+      <y>792</y>
       <w>33</w>
-      <h>99</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>484</x>
-      <y>726</y>
+      <x>561</x>
+      <y>737</y>
       <w>286</w>
       <h>198</h>
     </coordinates>
-    <panel_attributes>Babysitter search engine
+    <panel_attributes>Babysitters
 --
 id: int
 date_at: Carbon = null
@@ -382,8 +383,8 @@ finished_kidsout_shool: bool = false</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
-      <y>594</y>
+      <x>616</x>
+      <y>605</y>
       <w>33</w>
       <h>154</h>
     </coordinates>
@@ -393,8 +394,8 @@ finished_kidsout_shool: bool = false</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1177</x>
-      <y>1023</y>
+      <x>1254</x>
+      <y>1034</y>
       <w>264</w>
       <h>308</h>
     </coordinates>
@@ -420,12 +421,73 @@ deleted_at: Carbon</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1221</x>
-      <y>869</y>
+      <x>1298</x>
+      <y>880</y>
       <w>33</w>
       <h>176</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>275</x>
+      <y>627</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>Find babysitter
+--
+id: int
+date_at: Carbon = null
+began_at: Carbon = null
+end_at: Carbon = null
+birth_year: Carbon = null
+birth_month: Carbon = null
+address: Carbon = null
+can_sit_with_special_child: bool = false
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>110</x>
+      <y>462</y>
+      <w>506</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>440.0;10.0;10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1265</x>
+      <y>187</y>
+      <w>231</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>News service
+--
+id: int
+to: User
+news: string = ''
+created_at: Carbon
+updated_at: Carbon
+deleted_at: ?Carbon = null</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1078</x>
+      <y>231</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
   </element>
 </diagram>
